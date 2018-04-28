@@ -14,54 +14,100 @@
 	<div class="info">
 		<div class="wrapper">
 			<div class="photo">
-				<img src="img/rozha.jpg" alt="rozha"/>
+				<img src="https://avatars2.githubusercontent.com/u/35088825?s=400&u=17353a059e5c92283df90c0020167fff39ae192b&v=4" alt="rozha"/>
 			</div>
 			<div class="main-info">
-				<p class="name"></p>
-				<a class="gitlink"></a>
-				<p class="exp"></p>
+				<p class="name"><span class="bold">Имя: </span>Дмитрий</p>
+				<a href="https://github.com/Dimasiq" class="gitlink">Ссылка на Ваш репозиторий в GitHub</a>
+				<p class="exp"><span class="bold">Опыт работы: </span>Нет</p>
 			</div>
-		</div>
-		<div class="interview-date">
-			<p><input type="date"></p>
+			<div class="interview-date">
+				<p><span class="bold">Дата собеседования: </span><input type="date"></p>
+			</div>
 		</div>
 	</div>
 	<div class="skills">
 		<div class="wrapper">
 			<div class="english">
-				<p></p>
-				<p><input type="radio">
-				<input type="radio">
-				<input type="radio">
-				<input type="radio"></p>
+				<p class="bold">Уровень английского:</p>
+					<label>
+						<input type="radio" name="eng"> Летс ми спик фром май харт
+					</label>
+					<label>
+						<input type="radio" name="eng"> Соу-соу
+					</label>
+					<label>
+						<input type="radio" name="eng" checked="checked"> Вери велл
+					</label>
+					<label>
+						<input type="radio" name="eng"> Нэйтив спикер
+					</label>
 			</div>
 			<div class="key-skills">
-				<p></p>
+				<p class='bold'>Ключевые навыки:</p>
 				<ul id="skillsList">
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
 				</ul>
-				<input type="text" id="textForm"/>
+				<input type="text" id="textForm" placeholder="Введите навык..."/>
 				<button id="add" onclick="addList();">Добавить в список</button>
 			</div>
 			<div class="communication">
-				<p><select name="" id=""></select></p>
+				<p class="bold">Коммуникабельность: 
+				<select name="communication" id="comm" >
+					<option selected disabled>Выберите значене...</option>
+					<option value="weeks">Не выхожу из дома неделями</option>
+					<option value="months">Не выхожу из дома месяцами</option>
+					<option value="years">Не выхожу из дома годами</option>
+				</select></p>
 			</div>
 			<div class="wage">
-				<p><input type="text"></p>
+				<p class="bold">Желаемая з/п: <input type="text" placeholder="Введите значение..."></p>
 			</div>
 			<div class="check">
-				<p>
-					<input type="checkbox"/>
-					
-					<input type="checkbox"/>
-					
-					<input type="checkbox"/>
-					
-					<input type="checkbox"/>
-					
-				</p>
+				<p class="bold">Подходит по критериям:</p>
+					<label>
+						<input type="checkbox" checked="checked"/>
+						Знание английского
+					</label>
+					<label>
+						<input type="checkbox" checked="checked"/>
+						Оклад
+					</label>
+					<label>
+						<input type="checkbox" checked="checked"/>
+						Навыки
+					</label>
+					<label>
+						<input type="checkbox" checked="checked"/>
+						Сразу видно, что свой человек
+					</label>
+			</div>
+			<div class="tab">
+				<p class="bold">Образование, курсы и т.п.</p>
+				<table>
+					<tr>
+						<th>#</th>
+						<th>Сроки обучения</th>
+						<th>Наименование учебного заведения/курсов...</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2008-2012</td>
+						<td>Massachusetts Institute of Technology</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>2012-2016</td>
+						<td>Collège Technique De Montréal</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>2016-...</td>
+						<td>Royal Melbourne Institute of Technology</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>

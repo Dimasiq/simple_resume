@@ -1,0 +1,109 @@
+body{
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.bold{
+	font-weight: 600;
+}
+/*	heading	*/
+
+.heading{
+	margin: 30px auto;
+}
+
+/*	info	*/
+
+.info{
+	margin-bottom: 10px;
+}
+.photo{
+	display: inline-block;
+	position: relative;
+	margin-bottom: 30px;
+}
+.main-info{
+	display: inline-block;
+	position: absolute;
+	padding: 35px 50px;
+	margin: 0 auto;
+	line-height: 35px;
+}
+.main-info a{
+	color: black;
+	font-weight: 600;
+}
+/*	skills	*/
+.skills{
+	margin-bottom: 50px;
+}
+.english{
+	margin-bottom: 10px;
+	line-height: 35px;
+}
+.english label{
+	margin-right: 20px;
+}
+.key-skills{
+	margin-bottom: 20px;
+}
+.key-skills p,
+.key-skills ul>li{
+	margin-bottom: 10px;
+	list-style: circle;
+}
+.key-skills button{
+	margin-left: 15px;
+	box-shadow: 2px 2px 2px;
+}
+.communication{
+	margin-bottom: 20px;
+}
+.communication select{
+	margin-left: 15px;
+}
+.wage{
+	margin-bottom: 10px;
+}
+.check{
+	line-height: 35px;
+	margin-bottom: 10px;
+}
+.check label{
+	margin-right: 20px;
+}
+
+/*	table	*/
+
+.tab p{
+	margin-bottom: 20px;
+}
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 70%;
+}
+th,
+tr,
+td{
+	border: 1px solid black;
+}
+tr{
+	height: 30px;
+}
+td{
+	padding: 0 5px;
+}
+td:first-child{
+		text-align: center;
+}
