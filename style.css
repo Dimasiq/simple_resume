@@ -44,7 +44,7 @@ h4{
 }
 .gitlink{
 	color: black;
-  margin: 10px auto;
+  margin: 10px 0;
 	font-weight: 600;
 }
 .gitlink:hover{
@@ -65,7 +65,9 @@ h4{
 .interview-date input{
   margin-left: 10px;
 }
+
 /*	skills	*/
+
 .skills{
 	margin-bottom: 50px;
 }
@@ -81,19 +83,20 @@ h4{
 }
 .key-skills li{
 	margin-bottom: 10px;
+  color: black;
 	list-style: square;
 }
-.key-skills li::after{
+ .key-skills li::after{
   content: '×';
   margin-left: 2px;
   display: none;
 }
-.key-skills li:hover{
-  color: blue;
+ .key-skills li:hover{
+  color: black;
 }
-.key-skills li:hover::after{
+ .key-skills li:hover::after{
   display: inline;
-}
+} 
 .key-skills button{
 	margin-left: 15px;
 	box-shadow: 2px 2px 2px;
@@ -150,4 +153,39 @@ td{
 }
 td:first-child{
 		text-align: center;
+}
+
+@media screen and (max-width: 800px){
+  .info{
+    flex-direction: column;
+  }
+  .photo{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main-info{
+    margin-left: 0;
+  }
+  .english{
+    display: flex;
+    flex-direction: column;
+  }
+  .english label{
+    margin: 5px 0 ;
+  }
+  .communication{
+    display: flex;
+    flex-direction: column;
+  }
+  .communication select{
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  .check{
+    display: flex;
+    flex-direction: column;
+  }
+  table{
+    width: 100%;
+  }
 }
