@@ -7,29 +7,24 @@
 </head>
 <body>
 	<header class="heading">
-		<div class="wrapper">
 			<h1>Вакансия: Junior Frontend Developer</h1>
-		</div>
 	</header>
 	<div class="info">
-		<div class="wrapper">
 			<div class="photo">
 				<img src="img/rozha.jpg" alt="rozha"/>
 			</div>
 			<div class="main-info">
-				<p class="name"><span class="bold">Имя: </span>Дмитрий</p>
-				<a href="https://github.com/Dimasiq" class="gitlink">Ссылка на Ваш репозиторий в GitHub</a>
-				<p class="exp"><span class="bold">Опыт работы: </span>Нет</p>
-			</div>
-			<div class="interview-date">
-				<p><span class="bold">Дата собеседования: </span><input type="date"></p>
-			</div>
-		</div>
+        <div class="name"><h4>Имя:</h4>Дмитрий</div>
+				<a href="https://github.com/Dimasiq" class="gitlink" target="_blank">Ссылка на Ваш репозиторий в GitHub</a>
+				<div class="exp"><h4>Опыт работы: </h5>Нет</div>
+		  </div>
 	</div>
+	<div class="interview-date">
+      <h4>Дата собеседования: </h4><input type="date">
+  </div>
 	<div class="skills">
-		<div class="wrapper">
 			<div class="english">
-				<p class="bold">Уровень английского:</p>
+        <h4>Уровень английского:</h4>
 					<label>
 						<input type="radio" name="eng"> Летс ми спик фром май харт
 					</label>
@@ -44,7 +39,7 @@
 					</label>
 			</div>
 			<div class="key-skills">
-				<p class='bold'>Ключевые навыки:</p>
+        <h4>Ключевые навыки:</h4>
 				<ul id="skillsList">
 					<li>HTML</li>
 					<li>CSS</li>
@@ -54,24 +49,25 @@
 				<button id="add" onclick="addList();">Добавить в список</button>
 			</div>
 			<div class="communication">
-				<p class="bold">Коммуникабельность: 
+        <h4>Коммуникабельность: </h4>
 				<select name="communication" id="comm" >
 					<option selected disabled>Выберите значене...</option>
-					<option value="weeks">Не выхожу из дома неделями</option>
-					<option value="months">Не выхожу из дома месяцами</option>
-					<option value="years">Не выхожу из дома годами</option>
-				</select></p>
+					<option value="weeks">Не выхожу из дома неделями, пишу код</option>
+					<option value="months">Не выхожу из дома месяцами, пишу код</option>
+					<option value="years">Не выхожу из дома годами, пишу код</option>
+				</select>
 			</div>
 			<div class="wage">
-				<p class="bold">Желаемая з/п: <input type="text" placeholder="Введите значение...">
+				<h4>Желаемая з/п: </h4>
+				<input type="number" placeholder="Введите значение...">
 				<select name="wage" id="value">
 					<option value="rur">р.</option>
 					<option value="usd">$</option>
 					<option value="eur">€</option>
-					</select></p>
+          </select>
 			</div>
 			<div class="check">
-				<p class="bold">Подходит по критериям:</p>
+        <h4>Подходит по критериям:</h4>
 					<label>
 						<input type="checkbox" checked="checked"/>
 						Знание английского
@@ -90,7 +86,7 @@
 					</label>
 			</div>
 			<div class="tab">
-				<p class="bold">Образование, курсы и т.п.</p>
+        <h4>Образование, курсы и т.п.</h4>
 				<table>
 					<tr>
 						<th>#</th>
@@ -115,7 +111,6 @@
 				</table>
 			</div>
 		</div>
-	</div>
 	<script src="script/script.js"></script>
 </body>
 </html>

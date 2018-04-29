@@ -6,4 +6,10 @@ function addList(){
 	list.innerHTML = text;
 	
 	element.appendChild(list);
+  
+  document.onclick = function(){
+    list = Array.from(document.querySelectorAll('li'));
+    list.forEach((e) => {e.onclick = function() { this.remove(); } });
+  }
 }
+
